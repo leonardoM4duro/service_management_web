@@ -1,0 +1,204 @@
+.side-menu {
+  width: 250px;
+  min-height: 100vh;
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 1.5rem 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #334155;
+}
+
+.side-menu-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+  color: #3b82f6;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 1rem;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.side-menu li {
+  margin-bottom: 0.25rem;
+}
+
+.side-menu a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  display: block;
+  transition: all 0.15s ease-in-out;
+  border-left: 3px solid transparent;
+}
+
+.side-menu a:hover {
+  background: #334155;
+  color: #e2e8f0;
+  border-left-color: #475569;
+}
+
+.side-menu a.active {
+  background: #1e40af;
+  color: #ffffff;
+  border-left-color: #3b82f6;
+}
+
+/* Theme toggle styles */
+.theme-toggle-item {
+  margin-top: auto;
+  padding: 1rem 1.5rem 0;
+  border-top: 1px solid #334155;
+}
+
+/* Logout section styles */
+.logout-section {
+  margin-top: auto;
+  padding: 1rem 1.5rem 1.5rem;
+  border-top: 1px solid #334155;
+}
+
+.logout-btn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.logout-btn:hover {
+  background: #ef4444;
+  color: #ffffff;
+  border-color: #ef4444;
+}
+
+.theme-toggle-btn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #475569;
+  color: #94a3b8;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.theme-toggle-btn:hover {
+  background: #334155;
+  color: #e2e8f0;
+  border-color: #64748b;
+}
+
+.theme-icon {
+  font-size: 1rem;
+}
+
+.theme-text {
+  font-size: 0.875rem;
+}
+
+/* Responsividade do menu */
+@media (max-width: 900px) {
+  .side-menu {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    flex-direction: row;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .side-menu-title {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .side-menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .side-menu li {
+    margin-bottom: 0;
+  }
+  
+  .side-menu a {
+    padding: 0.5rem 0.75rem;
+    border-left: none;
+    border-radius: var(--radius);
+    font-size: 0.8rem;
+  }
+  
+  .side-menu a:hover,
+  .side-menu a.active {
+    border-left: none;
+  }
+
+  .logout-section {
+    margin-top: 0;
+    margin-left: auto;
+    padding: 0;
+    border-top: none;
+  }
+
+  .logout-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    min-width: auto;
+  }
+
+  .theme-toggle-item {
+    margin-top: 0;
+    margin-left: 0.5rem;
+    padding: 0;
+    border-top: none;
+  }
+
+  .theme-toggle-btn {
+    padding: 0.5rem;
+    margin-bottom: 0;
+    min-width: auto;
+  }
+
+  .theme-text {
+    display: none;
+  }
+}
