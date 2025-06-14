@@ -1,0 +1,238 @@
+/* Estilos principais para sistema administrativo */
+
+.app-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: var(--background-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+}
+
+/* Tabelas */
+.app-table {
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--background-card);
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  border: 1px solid var(--border-color);
+}
+
+.app-table th, 
+.app-table td {
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.app-table th {
+  background: #f1f5f9;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.app-table tr:hover {
+  background: #f8fafc;
+}
+
+.app-table tr:nth-child(even) {
+  background: #fafbfc;
+}
+
+.app-table tr:nth-child(even):hover {
+  background: #f1f5f9;
+}
+
+/* Formulários */
+.app-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.app-form .form-label {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  display: block;
+}
+
+.app-form .form-control {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100%;
+}
+
+.app-form .form-control:focus {
+  border-color: var(--primary-color);
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.app-form .form-control {
+  font-size: 0.97rem;
+}
+
+/* Botões */
+.app-btn {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.app-btn:last-child {
+  margin-right: 0;
+}
+
+.btn-primary.app-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-primary.app-btn:hover {
+  background-color: #1e40af;
+}
+
+.btn-success.app-btn {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.btn-success.app-btn:hover {
+  background-color: var(--success-hover);
+}
+
+.btn-danger.app-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-danger.app-btn:hover {
+  background-color: #dc2626;
+}
+
+.btn-secondary.app-btn {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.btn-secondary.app-btn:hover {
+  background-color: #475569;
+}
+
+.btn-outline-danger {
+  background-color: transparent;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+}
+
+.btn-outline-danger:hover {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* Estados dos botões */
+.app-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.app-btn:focus {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Layout responsivo */
+@media (max-width: 768px) {
+  .app-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .app-form {
+    max-width: 100%;
+  }
+  
+  .app-table {
+    font-size: 0.8rem;
+  }
+  
+  .app-table th,
+  .app-table td {
+    padding: 0.5rem;
+  }
+  
+  .app-btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* Utilitários */
+.text-center {
+  text-align: center;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
